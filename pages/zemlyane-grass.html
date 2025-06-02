@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трава у дома - Гитарник</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/animations.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <h1>Гитарник</h1>
+            </a>
+            <nav class="header-nav">
+                <a href="../index.html" class="header-nav-link">Главная</a>
+                <a href="../index.html#sections" class="header-nav-link">Разделы</a>
+                <a href="about.html" class="header-nav-link">Об авторе</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Трава у дома</h1>
+        <div class="header-text">Земляне</div>
+
+        <div class="song-content">
+            <div class="verse">
+                <div class="chords-line">Am                      G</div>
+                <div class="lyrics-line">Земля в иллюминаторе, земля в иллюминаторе,</div>
+                <div class="chords-line">F                       E</div>
+                <div class="lyrics-line">Земля в иллюминаторе видна.</div>
+                <div class="chords-line">Am                      G</div>
+                <div class="lyrics-line">Как сын грустит о матери, как сын грустит о матери,</div>
+                <div class="chords-line">F                       E</div>
+                <div class="lyrics-line">Грустим мы о земле - она одна.</div>
+            </div>
+
+            <div class="verse">
+                <div class="chords-line">Am                      G</div>
+                <div class="lyrics-line">А звезды тем не менее, а звезды тем не менее</div>
+                <div class="chords-line">F                       E</div>
+                <div class="lyrics-line">Чуть ближе, но все так же холодны.</div>
+                <div class="chords-line">Am                      G</div>
+                <div class="lyrics-line">И как в часы затмения, и как в часы затмения</div>
+                <div class="chords-line">F                       E</div>
+                <div class="lyrics-line">Ждем света и земные видим сны.</div>
+            </div>
+
+            <div class="verse">
+                <div class="chords-line">C                       G</div>
+                <div class="lyrics-line">И снится нам не рокот космодрома,</div>
+                <div class="chords-line">Dm                      Am</div>
+                <div class="lyrics-line">Не эта ледяная синева,</div>
+                <div class="chords-line">F                       G</div>
+                <div class="lyrics-line">А снится нам трава, трава у дома,</div>
+                <div class="chords-line">C        E7            Am</div>
+                <div class="lyrics-line">Зеленая, зеленая трава.</div>
+            </div>
+
+            <div class="verse">
+                <div class="chords-line">Am                      G</div>
+                <div class="lyrics-line">А мы летим орбитами, путями неизбитыми,</div>
+                <div class="chords-line">F                       E</div>
+                <div class="lyrics-line">Прошит метеоритами простор.</div>
+                <div class="chords-line">Am                      G</div>
+                <div class="lyrics-line">Оправдан риск и мужество, космическая музыка</div>
+                <div class="chords-line">F                       E</div>
+                <div class="lyrics-line">Вплывает в деловой наш разговор.</div>
+            </div>
+        </div>
+
+        <div class="song-controls">
+            <div class="control-group">
+                <label class="control-label" for="fontSize">Размер текста:</label>
+                <input type="number" id="fontSize" class="control-input" value="16" min="8" max="32">
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="scrollSpeed">Скорость прокрутки:</label>
+                <input type="number" id="scrollSpeed" class="control-input" value="0" min="0" max="10">
+            </div>
+            <div class="control-group">
+                <button id="startScroll" class="control-button">Автопрокрутка</button>
+                <button id="stopScroll" class="control-button">Стоп</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Управление размером текста
+        const fontSizeInput = document.getElementById('fontSize');
+        const songContent = document.querySelector('.song-content');
+
+        fontSizeInput.addEventListener('input', () => {
+            songContent.style.fontSize = fontSizeInput.value + 'px';
+        });
+
+        // Управление прокруткой
+        const scrollSpeedInput = document.getElementById('scrollSpeed');
+        const startScrollButton = document.getElementById('startScroll');
+        const stopScrollButton = document.getElementById('stopScroll');
+        let scrollInterval;
+
+        startScrollButton.addEventListener('click', () => {
+            const speed = scrollSpeedInput.value;
+            if (speed > 0) {
+                startScrollButton.classList.add('active');
+                stopScrollButton.classList.remove('active');
+                scrollInterval = setInterval(() => {
+                    window.scrollBy(0, 1);
+                }, 11 - speed);
+            }
+        });
+
+        stopScrollButton.addEventListener('click', () => {
+            clearInterval(scrollInterval);
+            startScrollButton.classList.remove('active');
+            stopScrollButton.classList.add('active');
+        });
+    </script>
+</body>
+</html> 

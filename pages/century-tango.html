@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весеннее танго - Гитарник</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/animations.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <h1>Гитарник</h1>
+            </a>
+            <nav class="header-nav">
+                <a href="../index.html" class="header-nav-link">Главная</a>
+                <a href="../index.html#sections" class="header-nav-link">Разделы</a>
+                <a href="about.html" class="header-nav-link">Об авторе</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Весеннее танго</h1>
+        <div class="header-text">Песни нашего века</div>
+
+        <div class="song-content">
+            <div class="verse">
+                <div class="chords-line">Am                 Dm</div>
+                <div class="lyrics-line">Весеннее танго, улыбка рассвета,</div>
+                <div class="chords-line">G                  C</div>
+                <div class="lyrics-line">Утренний дождь на зеленых ветвях.</div>
+                <div class="chords-line">F                  Dm</div>
+                <div class="lyrics-line">Весеннее танго, ты помнишь ли это -</div>
+                <div class="chords-line">E                  Am</div>
+                <div class="lyrics-line">Вальс облаков в голубых небесах?</div>
+            </div>
+
+            <div class="verse">
+                <div class="chords-line">Am                 Dm</div>
+                <div class="lyrics-line">Весеннее танго, капель на карнизах,</div>
+                <div class="chords-line">G                  C</div>
+                <div class="lyrics-line">Ласточек быстрых стремительный лёт.</div>
+                <div class="chords-line">F                  Dm</div>
+                <div class="lyrics-line">Весеннее танго уносит всё ближе</div>
+                <div class="chords-line">E                  Am</div>
+                <div class="lyrics-line">В солнечный день, что надежду несёт.</div>
+            </div>
+
+            <div class="verse">
+                <div class="chords-line">C                  G</div>
+                <div class="lyrics-line">Весеннее танго, весеннее танго,</div>
+                <div class="chords-line">Am                 E</div>
+                <div class="lyrics-line">Музыка света в оконном стекле.</div>
+                <div class="chords-line">F                  Dm</div>
+                <div class="lyrics-line">Весеннее танго, весеннее танго -</div>
+                <div class="chords-line">E                  Am</div>
+                <div class="lyrics-line">Вечная песня о вечной весне.</div>
+            </div>
+        </div>
+
+        <div class="song-controls">
+            <div class="control-group">
+                <label class="control-label" for="fontSize">Размер текста:</label>
+                <input type="number" id="fontSize" class="control-input" value="16" min="8" max="32">
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="scrollSpeed">Скорость прокрутки:</label>
+                <input type="number" id="scrollSpeed" class="control-input" value="0" min="0" max="10">
+            </div>
+            <div class="control-group">
+                <button id="startScroll" class="control-button">Автопрокрутка</button>
+                <button id="stopScroll" class="control-button">Стоп</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Управление размером текста
+        const fontSizeInput = document.getElementById('fontSize');
+        const songContent = document.querySelector('.song-content');
+
+        fontSizeInput.addEventListener('input', () => {
+            songContent.style.fontSize = fontSizeInput.value + 'px';
+        });
+
+        // Управление прокруткой
+        const scrollSpeedInput = document.getElementById('scrollSpeed');
+        const startScrollButton = document.getElementById('startScroll');
+        const stopScrollButton = document.getElementById('stopScroll');
+        let scrollInterval;
+
+        startScrollButton.addEventListener('click', () => {
+            const speed = scrollSpeedInput.value;
+            if (speed > 0) {
+                startScrollButton.classList.add('active');
+                stopScrollButton.classList.remove('active');
+                scrollInterval = setInterval(() => {
+                    window.scrollBy(0, 1);
+                }, 11 - speed);
+            }
+        });
+
+        stopScrollButton.addEventListener('click', () => {
+            clearInterval(scrollInterval);
+            startScrollButton.classList.remove('active');
+            stopScrollButton.classList.add('active');
+        });
+    </script>
+</body>
+</html> 

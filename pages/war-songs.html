@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Песни военных лет - Гитарник</title>
+    <link rel="icon" type="image/jpeg" href="/images/logo.jpeg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/animations.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/index.html" class="logo">
+                <h1>Гитарник</h1>
+            </a>
+            <nav class="header-nav">
+                <a href="/index.html" class="header-nav-link">Главная</a>
+                <a href="/index.html#sections" class="header-nav-link">Разделы</a>
+                <a href="/pages/about.html" class="header-nav-link">Об авторе</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Песни военных лет</h1>
+        
+        <div class="header-text">
+            Песни о войне, подвиге и патриотизме. Здесь собраны композиции, которые напоминают нам о героическом прошлом и воспевают силу духа.
+        </div>
+
+        <h1 class="second-title">Песни</h1>
+        
+        <nav class="songs-nav">
+            <a href="lube-horse.html" class="nav-button song-button">
+                <span class="song-name">Конь</span>
+                <span class="song-author">Любэ</span>
+            </a>
+            <a href="lube-motherland.html" class="nav-button song-button">
+                <span class="song-name">За тебя, Родина-мать</span>
+                <span class="song-author">Любэ</span>
+            </a>
+            <a href="kipelov-free.html" class="nav-button song-button">
+                <span class="song-name">Я свободен</span>
+                <span class="song-author">Кипелов</span>
+            </a>
+            <a href="aria-angel.html" class="nav-button song-button">
+                <span class="song-name">Беспечный ангел</span>
+                <span class="song-author">Ария</span>
+            </a>
+        </nav>
+
+        <h1 class="second-title">Разделы</h1>
+        
+        <nav class="section-nav">
+            <a href="/pages/camp-songs.html" class="section-button">
+                <span class="section-button-content">Песни у костра</span>
+            </a>
+            <a href="/pages/daily-songs.html" class="section-button">
+                <span class="section-button-content">Песни на каждый день</span>
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        // Инициализация размеров (если нужно)
+        const songButtons = document.querySelectorAll('.song-button');
+        songButtons.forEach(button => {
+            button.style.fontSize = '16px';
+        });
+    </script>
+</body>
+</html> 
