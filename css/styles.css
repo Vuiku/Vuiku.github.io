@@ -192,7 +192,9 @@ nav {
 /* Новые стили для кнопок разделов */
 .section-nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     width: 100%;
     margin: 2rem 0;
 }
@@ -232,7 +234,6 @@ nav {
     padding: 2px;
     background: var(--button-gradient);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -338,18 +339,15 @@ nav {
 }
 
 .song-controls {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--header-background);
+    background-color: var(--card-background);
+    border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    margin: 2rem 0;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .control-group {
@@ -361,6 +359,7 @@ nav {
 .control-label {
     color: var(--text-color);
     font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 .control-input {
@@ -373,33 +372,74 @@ nav {
 }
 
 .control-button {
-    background: var(--primary-blue);
+    background: var(--button-gradient);
     color: var(--text-color);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .control-button:hover {
-    background: #6ba5e7;
+    background: var(--button-gradient-hover);
 }
 
 .control-button.active {
     background: #2c5c8f;
 }
 
+.keyboard-shortcuts {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.keyboard-shortcuts p {
+    margin: 0 0 1rem 0;
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+.keyboard-shortcuts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+}
+
+.keyboard-shortcuts li {
+    background-color: rgba(74, 144, 226, 0.1);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.keyboard-shortcuts li:hover {
+    background-color: rgba(74, 144, 226, 0.2);
+}
+
 @media (max-width: 768px) {
     .song-controls {
         flex-direction: column;
+        align-items: center;
+        padding: 1rem;
         gap: 1rem;
-        padding: 0.8rem;
     }
     
     .control-group {
         width: 100%;
         justify-content: center;
+    }
+    
+    .keyboard-shortcuts ul {
+        grid-template-columns: 1fr;
     }
 }
 
