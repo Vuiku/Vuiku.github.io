@@ -42,5 +42,108 @@
             </a>
         </nav>
     </div>
+
+
+<!-- Footer Styles -->
+<style>
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-img {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4a9eff;
+}
+</style> 
+ 
+ 
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <!-- Source Code Info -->
+            <div class="footer-section">
+                <h4>Исходный код</h4>
+                <p>Этот сайт полностью открыт и доступен в исходном коде</p>
+                <a href="https://github.com/Vuiku/Vuiku.github.io" target="_blank" id="repo-link">GitHub</a>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Социальные сети</h4>
+                <div class="social-icons">
+                    <!-- Add your social media links here -->
+                    <a href="https://t.me/Vuiku_Life" class="social-icon">
+                        <img src="/images/telegram.png" alt="Telegram" class="social-img">
+                    </a>
+                    <a href="https://github.com/Vuiku" class="social-icon">
+                        <img src="/images/github.png" alt="GitHub" class="social-img">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-section">
+                <p class="copyright">© 2024 Vuiku. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

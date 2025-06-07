@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хали-гали, паратрупер - Гитарник</title>
+    <title>В ожидание я много что успел - Гитарник</title>
     <link rel="icon" type="image/jpeg" href="../../images/logo.jpeg">
     <link rel="stylesheet" href="../../css/styles.css">
     <script src="../../js/animations.js" defer></script>
@@ -22,9 +22,9 @@
         </header>
 
     <div class="container">
-        <h1>Хали-гали, паратрупер</h1>
+        <h1>В ожидание я много что успел</h1>
         <div class="song-info">
-            <p class="song-author">Исполнитель: Леприконсы</p>
+            <p class="song-author">Исполнитель: Авторские песни 2x2</p>
         </div>
 
         <div class="song-controls">
@@ -40,89 +40,38 @@
         <div class="song-content" id="songContent">
             <div class="song-part">
                 <h3>[Вступление]:</h3>
-                <div class="chords-line">Bm | F# A x3</div>
-                <div class="chords-line">Bm</div>
-                <div class="chords-line">Bm | F# A x8</div>
-                <div class="chords-line">Bm</div>
+                <div class="chords-line">Am</div>
+                <div class="chords-line">Em</div>
             </div>
 
             <div class="song-part">
-                <h3>[Куплет]:</h3>
+                <h3>[Куплет 1]:</h3>
                 <div class="verse-line">
-                    <div class="chords-line">Bm                A</div>
-                    <div class="lyrics-line">Помню, было мне десять лет,</div>
+                    <div class="chords-line">Am                    Em</div>
+                    <div class="lyrics-line">Первая строка куплета</div>
                 </div>
                 <div class="verse-line">
-                    <div class="chords-line">E           G      F#    Bm</div>
-                    <div class="lyrics-line">Я копил на новый велосипед</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">Bm                A</div>
-                    <div class="lyrics-line">Я жил лишь этою мечтой,</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">E               G        F#        Bm</div>
-                    <div class="lyrics-line">Пока как-то раз не встретился с тобой</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">Bm                A</div>
-                    <div class="lyrics-line">Ты меня обворожила</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">E           G      F#    Bm</div>
-                    <div class="lyrics-line">Погулять с собою предложила</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">Bm                A</div>
-                    <div class="lyrics-line">Я взял копилку и разбил</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">E               G        F#    Bm</div>
-                    <div class="lyrics-line">И тебя в парк отдыха сводил</div>
+                    <div class="chords-line">C                     G</div>
+                    <div class="lyrics-line">Вторая строка куплета</div>
                 </div>
             </div>
 
             <div class="song-part">
-                <h3>[Припев]: (2 раза)</h3>
+                <h3>[Припев]:</h3>
                 <div class="verse-line">
-                    <div class="chords-line">Bm</div>
-                    <div class="lyrics-line">Хали-гали,</div>
+                    <div class="chords-line">Am</div>
+                    <div class="lyrics-line">Первая строка припева</div>
                 </div>
                 <div class="verse-line">
-                    <div class="chords-line">A</div>
-                    <div class="lyrics-line">Паратрупер</div>
+                    <div class="chords-line">Em</div>
+                    <div class="lyrics-line">Вторая строка припева</div>
                 </div>
-                <div class="verse-line">
-                    <div class="chords-line">E           G    F#</div>
-                    <div class="lyrics-line">Нам с тобою было супер</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">Bm</div>
-                    <div class="lyrics-line">Супер-восемь,</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">A</div>
-                    <div class="lyrics-line">Хали-гали</div>
-                </div>
-                <div class="verse-line">
-                    <div class="chords-line">E           G        F#</div>
-                    <div class="lyrics-line">Мы с тобой весь день летали</div>
-                </div>
-            </div>
-
-            <div class="song-part">
-                <h3>[Проигрыш]:</h3>
-                <div class="verse-line">
-                    <div class="chords-line">G F#</div>
-                    <div class="lyrics-line">Летали</div>
-                </div>
-                <div class="chords-line">Bm | F# A x4</div>
             </div>
         </div>
 
         <div class="navigation-buttons">
             <nav class="section-nav">
-                <a href="../daily-songs.html" class="nav-button">← К списку песен</a>
+                <a href="../CATEGORY-songs.html" class="nav-button">← К списку песен</a>
             </nav>
         </div>
     </div>
@@ -162,7 +111,7 @@
             toggleScrollButton.classList.add('active');
             scrollInterval = setInterval(() => {
                 window.scrollBy(0, 1);
-            }, 45); // Уменьшаем скорость, увеличивая задержку с 30 до 45мс
+            }, 45);
         }
 
         function stopScroll() {
@@ -181,6 +130,74 @@
         fontSizeControl.dispatchEvent(new Event('input'));
     </script>
 
+
+<!-- Footer Styles -->
+<style>
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-img {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4a9eff;
+}
+</style> 
  
  
 <!-- Footer Section -->

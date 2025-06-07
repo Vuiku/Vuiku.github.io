@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Московская песня - Гитарник</title>
+    <link rel="icon" type="image/jpeg" href="../../images/logo.jpeg">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="../../js/animations.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+            <div class="header-container">
+                <a href="/" class="logo">
+                    <h1>Гитарник</h1>
+                </a>
+                <nav class="header-nav">
+                    <a href="/" class="header-nav-link">Главная</a>
+                    <a href="/pages/about.html" class="header-nav-link">Об авторе</a>
+                </nav>
+            </div>
+        </header>
+
+    <div class="container">
+        <h1>Московская песня</h1>
+        <div class="song-info">
+            <p class="song-author">Исполнитель: Сергей Трофимов</p>
+        </div>
+
+        <div class="song-controls">
+            <div class="control-group">
+                <label class="control-label">Размер аккордов:</label>
+                <input type="number" min="12" max="32" value="16" class="control-input" id="fontSizeControl">
+            </div>
+            <div class="control-group">
+                <button class="control-button" id="toggleScrollButton">Автопрокрутка</button>
+            </div>
+        </div>
+        
+        <div class="song-content" id="songContent">
+            <!-- Куплет 1 -->
+            <div class="song-part">
+                <h3>[Куплет 1]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em      D</div>
+                    <div class="lyrics-line">Всю ночь на улице мело,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">C           B7</div>
+                    <div class="lyrics-line">И за окном белым-бело,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em          D           G</div>
+                    <div class="lyrics-line">И толще справочника свежий календарь,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am           D</div>
+                    <div class="lyrics-line">И дворник, маленький таджик,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">G           C</div>
+                    <div class="lyrics-line">С лопатой по двору кружит,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am                 B7</div>
+                    <div class="lyrics-line">На языке Хайяма матеря январь.</div>
+                </div>
+            </div>
+        
+            <!-- Куплет 2 -->
+            <div class="song-part">
+                <h3>[Куплет 2]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em      D</div>
+                    <div class="lyrics-line">Забыты праздники давно,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">C           B7</div>
+                    <div class="lyrics-line">Как прошлогоднее кино,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em          D           G</div>
+                    <div class="lyrics-line">Сюжет, которого не вспомнить никому.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am        D</div>
+                    <div class="lyrics-line">А я несу тебе цветы,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">G          C</div>
+                    <div class="lyrics-line">Чтобы скорей узнала ты</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am                 B7</div>
+                    <div class="lyrics-line">О том, что мне пока известно одному.</div>
+                </div>
+            </div>
+        
+            <!-- Припев 1 -->
+            <div class="song-part">
+                <h3>[Припев 1]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em             Am</div>
+                    <div class="lyrics-line">Я знаю точно, растает лед,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">D                   G      B7</div>
+                    <div class="lyrics-line">В тиши полночной иволга запоет.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em                    Am</div>
+                    <div class="lyrics-line">И рыжею девчонкой, теплою ото сна,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">B7            Em Am B7</div>
+                    <div class="lyrics-line">В озябший мир придет весна.</div>
+                </div>
+            </div>
+        
+            <!-- Куплет 3 -->
+            <div class="song-part">
+                <h3>[Куплет 3]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em      D</div>
+                    <div class="lyrics-line">Прогноз погоды - снегопад,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">C           B7</div>
+                    <div class="lyrics-line">В заторах улицы стоят,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em          D           G</div>
+                    <div class="lyrics-line">Машины, как сугробы с выхлопной трубой.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am         D</div>
+                    <div class="lyrics-line">И из приемников FM</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">G        C</div>
+                    <div class="lyrics-line">Непобедимый Bonney M</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am                 B7</div>
+                    <div class="lyrics-line">Поет, как на Багамах плещется прибой.</div>
+                </div>
+            </div>
+        
+            <!-- Куплет 4 -->
+            <div class="song-part">
+                <h3>[Куплет 4]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em      D</div>
+                    <div class="lyrics-line">Народ торопится, скользит,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">C           B7</div>
+                    <div class="lyrics-line">Теряя варежки в грязи,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em          D           G</div>
+                    <div class="lyrics-line">Ко входу в недра всепогодного метро.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am          D</div>
+                    <div class="lyrics-line">И я с цветами под пальто,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">G           C</div>
+                    <div class="lyrics-line">Спешу сказать тебе про то,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am                 B7</div>
+                    <div class="lyrics-line">Что вопреки прогнозам метеобюро...</div>
+                </div>
+            </div>
+        
+            <!-- Припев 2 -->
+            <div class="song-part">
+                <h3>[Припев 2]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em             Am</div>
+                    <div class="lyrics-line">Я знаю точно, растает лед,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">D                   G      B7</div>
+                    <div class="lyrics-line">В тиши полночной иволга запоет.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em                    Am</div>
+                    <div class="lyrics-line">И рыжею девчонкой, теплою ото сна,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">B7            Em Am B7</div>
+                    <div class="lyrics-line">В озябший мир придет весна.</div>
+                </div>
+            </div>
+        
+            <!-- Куплет 5 -->
+            <div class="song-part">
+                <h3>[Куплет 5]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em      D</div>
+                    <div class="lyrics-line">К палатке с надписью "Табак"</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">C           B7</div>
+                    <div class="lyrics-line">Какой-то уличный остряк</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em          D           G</div>
+                    <div class="lyrics-line">Приклеил объявленье: "Лыжи напрокат!"</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am           D</div>
+                    <div class="lyrics-line">Но шутки гражданам не в кайф,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">G           C</div>
+                    <div class="lyrics-line">Поскольку в их привычный драйв</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am                 B7</div>
+                    <div class="lyrics-line">Так неожиданно вмешался снегопад.</div>
+                </div>
+            </div>
+        
+            <!-- Куплет 6 -->
+            <div class="song-part">
+                <h3>[Куплет 6]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em      D</div>
+                    <div class="lyrics-line">Пенсионеры и врачи,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">C         B7</div>
+                    <div class="lyrics-line">Негоцианты и ткачи</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em          D           G</div>
+                    <div class="lyrics-line">В стихийном бедствии теперь одна семья.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am         D</div>
+                    <div class="lyrics-line">И только бойкий карапуз,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">G           C</div>
+                    <div class="lyrics-line">Похожий на большой арбуз,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Am                 B7</div>
+                    <div class="lyrics-line">Сидит на санках, улыбаясь, как и я.</div>
+                </div>
+            </div>
+        
+            <!-- Припев 3 -->
+            <div class="song-part">
+                <h3>[Припев 3]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em             Am</div>
+                    <div class="lyrics-line">Он знает точно, растает лед,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">D                   G      B7</div>
+                    <div class="lyrics-line">В тиши полночной иволга запоет,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em             Am</div>
+                    <div class="lyrics-line">И рыжею девчонкой, теплою ото сна,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">B7            Em Am B7</div>
+                    <div class="lyrics-line">В озябший мир придет весна.</div>
+                </div>
+            </div>
+        
+            <!-- Припев 4 -->
+            <div class="song-part">
+                <h3>[Припев 4]:</h3>
+                <div class="verse-line">
+                    <div class="chords-line">Em             Am</div>
+                    <div class="lyrics-line">Мы знаем точно, растает лед,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">D                   G      B7</div>
+                    <div class="lyrics-line">В тиши полночной иволга запоет,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">Em             Am</div>
+                    <div class="lyrics-line">И рыжею девчонкой, теплою ото сна,</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">B7            Em Am B7</div>
+                    <div class="lyrics-line">В озябший мир придет весна.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">B7            Em Am B7</div>
+                    <div class="lyrics-line">В озябший мир придет весна.</div>
+                </div>
+                <div class="verse-line">
+                    <div class="chords-line">B7            Em Am B7</div>
+                    <div class="lyrics-line">В озябший мир придет весна.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="navigation-buttons">
+            <nav class="section-nav">
+                <a href="../CATEGORY-songs.html" class="nav-button">← К списку песен</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        // Управление размером шрифта
+        const fontSizeControl = document.getElementById('fontSizeControl');
+        const chordsLines = document.querySelectorAll('.chords-line');
+        const lyricsLines = document.querySelectorAll('.lyrics-line');
+
+        fontSizeControl.addEventListener('input', function() {
+            const size = this.value;
+            chordsLines.forEach(line => {
+                line.style.fontSize = size + 'px';
+            });
+            lyricsLines.forEach(line => {
+                line.style.fontSize = (size - 2) + 'px';
+            });
+        });
+
+        // Управление автопрокруткой
+        const toggleScrollButton = document.getElementById('toggleScrollButton');
+        let isScrolling = false;
+        let scrollInterval;
+
+        toggleScrollButton.addEventListener('click', function() {
+            if (isScrolling) {
+                stopScroll();
+            } else {
+                startScroll();
+            }
+        });
+
+        function startScroll() {
+            isScrolling = true;
+            toggleScrollButton.textContent = 'Остановить';
+            toggleScrollButton.classList.add('active');
+            scrollInterval = setInterval(() => {
+                window.scrollBy(0, 1);
+            }, 45);
+        }
+
+        function stopScroll() {
+            isScrolling = false;
+            toggleScrollButton.textContent = 'Автопрокрутка';
+            toggleScrollButton.classList.remove('active');
+            clearInterval(scrollInterval);
+        }
+
+        // Остановка прокрутки при взаимодействии пользователя
+        document.addEventListener('wheel', stopScroll);
+        document.addEventListener('touchstart', stopScroll);
+        document.addEventListener('keydown', stopScroll);
+
+        // Инициализация начальных размеров
+        fontSizeControl.dispatchEvent(new Event('input'));
+    </script>
+
+
+<!-- Footer Styles -->
+<style>
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-img {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4a9eff;
+}
+</style> 
+ 
+ 
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <!-- Source Code Info -->
+            <div class="footer-section">
+                <h4>Исходный код</h4>
+                <p>Этот сайт полностью открыт и доступен в исходном коде</p>
+                <a href="https://github.com/Vuiku/Vuiku.github.io" target="_blank" id="repo-link">GitHub</a>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Социальные сети</h4>
+                <div class="social-icons">
+                    <!-- Add your social media links here -->
+                    <a href="https://t.me/Vuiku_Life" class="social-icon">
+                        <img src="/images/telegram.png" alt="Telegram" class="social-img">
+                    </a>
+                    <a href="https://github.com/Vuiku" class="social-icon">
+                        <img src="/images/github.png" alt="GitHub" class="social-img">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-section">
+                <p class="copyright">© 2024 Vuiku. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html> 
